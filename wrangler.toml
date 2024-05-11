@@ -1,0 +1,10 @@
+name = "my-worker"
+type = "javascript"
+account_id = "your_cloudflare_account_id"
+workers_dev = true
+compatibility_date = "2023-10-01"
+
+[build]
+command = "bun build src/index.ts --output dist/index.js"
+upload.format = "service-worker"
+upload.main = "./dist/index.js"

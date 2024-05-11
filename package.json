@@ -1,0 +1,19 @@
+{
+  "scripts": {
+    "dev": "wrangler dev src/index.ts",
+    "deploy": "wrangler deploy --minify src/index.ts"
+  },
+  "dependencies": {
+    "bun": "^1.1.7",
+    "dotenv": "^16.4.5",
+    "hono": "^4.2.7",
+    "mongoose": "^8.3.4",
+    "resend": "^3.2.0",
+    "viem": "^2.10.3",
+    "web3": "^4.8.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240403.0",
+    "wrangler": "^3.47.0"
+  }
+}
